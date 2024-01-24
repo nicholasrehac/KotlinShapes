@@ -2,9 +2,9 @@ class Square(name: String) : Shape(name) {
     var length = 0.0
     var height = 0.0
 
-    override fun setDimensions(vararg length_height: Double) {
-        this.length = length_height[0]
-        this.height = length_height[1]
+    override fun setDimensions(vararg dimensions: Double) {
+        this.length = dimensions[0]
+        this.height = dimensions[1]
     }
 
     override fun printDimensions() {
