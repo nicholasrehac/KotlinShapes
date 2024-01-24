@@ -1,9 +1,10 @@
 import kotlin.math.sqrt
 
-class Triangle(name: String) : Shape(name) {
+open class Triangle(name: String) : Shape(name) {
     var side_1 = 0.0
     var side_2 = 0.0
     var side_3 = 0.0
+
     override fun setDimensions(vararg dimensions: Double) {
         this.side_1 = dimensions[0]
         this.side_2 = dimensions[1]
